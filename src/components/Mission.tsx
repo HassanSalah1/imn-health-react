@@ -1,33 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { FileText, Target, Eye } from "lucide-react";
-
-const sections = [
-  {
-    icon: FileText,
-    title: "OVERVIEW",
-    description: "InterMark Network (IMN) is the first and only fully-integrated healthcare management platform designed to streamline operations and enhance patient care.",
-    link: "#overview",
-  },
-  {
-    icon: Target,
-    title: "OUR MISSION",
-    description: "To be your most trusted if not the sole provider for the full range of healthcare services, delivering excellence in every interaction.",
-    link: "#mission",
-  },
-  {
-    icon: Eye,
-    title: "OUR VISION",
-    description: "To revolutionize the healthcare market through our full range of integrated services, setting new standards for patient care and operational excellence.",
-    link: "#vision",
-  },
-];
+import { MISSION_SECTIONS } from "@/data/mission";
 
 const Mission = () => {
   return (
     <section className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {sections.map((section, index) => {
+          {MISSION_SECTIONS.map((section, index) => {
             const Icon = section.icon;
             return (
               <Card
@@ -52,12 +31,7 @@ const Mission = () => {
                   </p>
 
                   {/* Read More Link */}
-                  <a
-                    href={section.link}
-                    className="inline-block text-primary font-semibold hover:underline transition-all"
-                  >
-                    Read more
-                  </a>
+                  
                 </CardContent>
               </Card>
             );

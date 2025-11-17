@@ -1,28 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Award, Shield, Users, Clock } from "lucide-react";
-
-const features = [
-  {
-    icon: Award,
-    title: "Expert Team",
-    description: "Highly qualified medical professionals with years of experience in their fields.",
-  },
-  {
-    icon: Shield,
-    title: "Patient Safety",
-    description: "Stringent safety protocols and quality standards to ensure the best care.",
-  },
-  {
-    icon: Users,
-    title: "Patient-Centered",
-    description: "Personalized care plans designed around your unique health needs and goals.",
-  },
-  {
-    icon: Clock,
-    title: "24/7 Support",
-    description: "Round-the-clock availability for emergencies and patient support services.",
-  },
-];
+import { ABOUT_FEATURES } from "@/data/about";
 
 const About = () => {
   return (
@@ -46,7 +23,7 @@ const About = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {features.map((feature, index) => {
+            {ABOUT_FEATURES.map((feature, index) => {
               const Icon = feature.icon;
               return (
                 <Card

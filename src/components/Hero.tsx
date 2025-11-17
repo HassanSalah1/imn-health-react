@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart } from "lucide-react";
-import heroImage from "@/assets/hero-medical.jpg";
+import heroImage from "@/assets/home-img-01.png";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -28,18 +28,18 @@ const Hero = () => {
           <div className="flex items-center space-x-2 mb-6">
             <Heart className="text-primary-foreground" size={32} />
             <span className="text-primary-foreground/90 font-semibold text-lg">
-              Your Health, Our Priority
+              Innovate. Launch. Lead.
             </span>
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Advanced Healthcare
-            <br />
-            <span className="text-primary-foreground/90">For Modern Lives</span>
+            IDEA TO REALITY
+            {/* <br />
+            <span className="text-primary-foreground/90">From Concept to Commercialization</span> */}
           </h1>
           
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed max-w-2xl">
-            Experience exceptional medical care with cutting-edge technology and compassionate professionals dedicated to your wellbeing.
+            The network is formed of a unique blend of companies serving healthcare products, from the very early steps of product conceptualization and initiation, moving through marketing and communication strategies, all the way till complete product commercialization and management.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up">
@@ -70,7 +70,7 @@ const Hero = () => {
             </div>
             <div className="animate-scale-in" style={{ animationDelay: "0.1s" }}>
               <div className="text-3xl md:text-4xl font-bold text-primary-foreground">50k+</div>
-              <div className="text-primary-foreground/80 mt-1">Patients Served</div>
+              <div className="text-primary-foreground/80 mt-1">Customers Served</div>
             </div>
             <div className="animate-scale-in" style={{ animationDelay: "0.2s" }}>
               <div className="text-3xl md:text-4xl font-bold text-primary-foreground">98%</div>

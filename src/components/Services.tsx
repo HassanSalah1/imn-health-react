@@ -1,47 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Activity, Users, Microscope, Heart, Brain, Stethoscope } from "lucide-react";
-import service1 from "@/assets/service-1.jpg";
-import service2 from "@/assets/service-2.jpg";
-import service3 from "@/assets/service-3.jpg";
-
-const services = [
-  {
-    icon: Stethoscope,
-    title: "Primary Care",
-    description: "Comprehensive healthcare for all ages with personalized treatment plans and preventive care.",
-    image: service1,
-  },
-  {
-    icon: Users,
-    title: "Specialist Consultations",
-    description: "Expert consultations across multiple specialties with experienced medical professionals.",
-    image: service2,
-  },
-  {
-    icon: Microscope,
-    title: "Diagnostic Services",
-    description: "State-of-the-art diagnostic facilities with advanced imaging and laboratory services.",
-    image: service3,
-  },
-  {
-    icon: Heart,
-    title: "Cardiology",
-    description: "Complete cardiac care including prevention, diagnosis, and treatment of heart conditions.",
-    image: service1,
-  },
-  {
-    icon: Brain,
-    title: "Neurology",
-    description: "Advanced neurological care for disorders of the brain, spine, and nervous system.",
-    image: service2,
-  },
-  {
-    icon: Activity,
-    title: "Emergency Care",
-    description: "24/7 emergency medical services with rapid response and critical care capabilities.",
-    image: service3,
-  },
-];
+import { services } from "@/data/services";
 
 const Services = () => {
   return (
