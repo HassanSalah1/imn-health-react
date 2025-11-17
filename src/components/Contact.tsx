@@ -86,6 +86,7 @@ const Contact = () => {
         toast({
           title: "Message Sent!",
           description: "Thank you for contacting us. We'll get back to you soon.",
+          variant: "success",
         });
         setFormData({ full_name: "", email: "", phone: "", message: "" });
         setErrors({});
